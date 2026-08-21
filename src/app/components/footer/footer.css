@@ -1,0 +1,10 @@
+.footer {
+  padding: 1rem 1.5rem;
+  background: #1f2933;
+  color: #d9dee3;
+}
+
+.footer__text {
+  margin: 0;
+  font-size: 0.9rem;
+}

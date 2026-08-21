@@ -1,0 +1,18 @@
+<section class="products" aria-label="Products">
+  <h2 class="products__title">Our Products</h2>
+
+  @if (cartMessage(); as message) {
+    <p class="products__cart-message" role="status">{{ message }}</p>
+  }
+
+  <div class="products__grid">
+    @for (product of products(); track product.id) {
+      <app-product-card
+        [name]="product.name"
+        [price]="product.price"
+        [description]="product.description"
+        (buy)="onBuy(product)"
+      />
+    }
+  </div>
+</section>

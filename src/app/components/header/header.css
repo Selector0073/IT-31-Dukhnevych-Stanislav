@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: #1f2933;
+  color: #ffffff;
+}
+
+.header__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.header__nav {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.header__link {
+  color: #d9dee3;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.25rem 0;
+}
+
+.header__link:hover,
+.header__link:focus-visible {
+  color: #ffffff;
+}
+
+.header__link:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
